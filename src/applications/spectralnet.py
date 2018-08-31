@@ -79,6 +79,8 @@ def run_net(data, params):
     else:
         siamese_net = None
 
+    print("finished siamese network training")
+
     #
     # DEFINE AND TRAIN SPECTRALNET
     #
@@ -93,7 +95,7 @@ def run_net(data, params):
             params['spec_lr'], params['spec_drop'], params['spec_patience'],
             params['spec_ne'])
 
-    print("finished training")
+    print("finished spectral network training")
 
     #
     # EVALUATE

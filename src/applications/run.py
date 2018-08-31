@@ -53,8 +53,8 @@ if args.dset == 'mnist':
         'spec_ne': 400,                     # number of training epochs for spectral net
         'siam_lr': 1e-3,                    # initial learning rate for siamese net
         'spec_lr': 1e-3,                    # initial learning rate for spectral net
-        'siam_patience': 10,                # early stopping patience for siamese net
-        'spec_patience': 20,                # early stopping patience for spectral net
+        'siam_patience': 10, #10,                # early stopping patience for siamese net
+        'spec_patience': 10, #20,                # early stopping patience for spectral net
         'siam_drop': 0.1,                   # learning rate scheduler decay for siamese net
         'spec_drop': 0.1,                   # learning rate scheduler decay for spectral net
         'batch_size': 1024,                 # batch size for spectral net
@@ -85,8 +85,8 @@ elif args.dset == 'reuters':
         'spec_ne': 300,
         'siam_lr': 1e-3,
         'spec_lr': 5e-5,
-        'siam_patience': 1,
-        'spec_patience': 5,
+        'siam_patience': 30, #10, #1,
+        'spec_patience': 30, #10, #5,
         'siam_drop': 0.1,
         'spec_drop': 0.1,
         'batch_size': 2048,

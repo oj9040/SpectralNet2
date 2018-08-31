@@ -81,3 +81,4 @@ data = get_data(params, new_dataset_data)
 x_spectralnet, y_spectralnet = run_net(data, params)
 ```
 For more information on what each hyperparameter means, see src/applications/run.py
+# SpectralNet2
